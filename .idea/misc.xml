@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/drawable-v24/ic_logout2.xml" value="0.1955" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/drawable/background_chat_input.xml" value="0.1" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/drawable/dialog_background.xml" value="0.1" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/drawable/filter_background.xml" value="0.1" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/drawable/ic_logout.xml" value="0.1955" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_add_location_new_announcement.xml" value="0.3109375" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_add_new_announcement.xml" value="0.3194444444444444" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_announcement_details.xml" value="0.3037037037037037" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_bookmarks.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_change_password.xml" value="0.3109375" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_chat.xml" value="0.3109375" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_dialog_filter_home.xml" value="0.3148148148148148" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_edit_profile.xml" value="0.10740740740740741" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_main.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_my_announcements.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_reset_password.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_sign_in.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_sign_up.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/activity_terms_of_use.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/fragment_chat.xml" value="0.32037037037037036" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/fragment_home.xml" value="0.3148148148148148" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/fragment_map.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/fragment_profile.xml" value="0.32277834525025534" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/item_container_announcements.xml" value="0.3194444444444444" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/layout_dialog_alert.xml" value="0.328125" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/layout_dialog_filter.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/layout/layout_dialog_reset_password.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/Share/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

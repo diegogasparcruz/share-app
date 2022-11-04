@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@drawable/ripple_effect"
+    android:padding="6dip">
+
+    <ImageView
+        android:id="@+id/imageIconStart"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dip"
+        android:contentDescription="" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textSubtitle"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imageIconStart"
+        android:ellipsize="marquee"
+        android:textColor="@color/primary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSubtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/imageIconStart"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageIconEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dip"
+        android:contentDescription="" />
+
+</RelativeLayout>

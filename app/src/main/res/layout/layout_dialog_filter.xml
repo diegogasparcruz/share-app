@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:id="@+id/layoutDialogContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/layoutDialog"
+        android:background="@drawable/dialog_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTitle"
+            android:padding="10dp"
+            android:background="@drawable/filter_background"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageIcon"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="@id/textTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textTitle"
+            app:tint="@color/white" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMessage"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"/>
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle"
+            android:layout_marginBottom="30dp">
+            <RadioButton
+                android:id="@+id/rdHouse"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/casa"
+                android:button="@android:color/transparent"
+                android:background="@drawable/background_radio_selector"
+                android:textColor="@drawable/text_color"
+                android:textSize="@dimen/_11ssp"
+                android:elevation="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_8sdp"/>
+
+            <RadioButton
+                android:id="@+id/rdApartment"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/apartamento"
+                android:button="@android:color/transparent"
+                android:background="@drawable/background_radio_selector"
+                android:textColor="@drawable/text_color"
+                android:textSize="@dimen/_11ssp"
+                android:elevation="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_8sdp"/>
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEmpty"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/limpar"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:backgroundTint="@color/error"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@id/layoutDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFilter"
+        app:layout_constraintTop_toBottomOf="@id/layoutDialog"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFilter"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/filtrar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@id/layoutDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonEmpty"
+        app:layout_constraintTop_toBottomOf="@id/layoutDialog"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

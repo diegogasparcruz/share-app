@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="primary">#1C2E46</color>-->
+    <!--    <color name="primary_dark">#142232</color>-->
+
+    <!--    <color name="primary">#01BAEF</color>-->
+    <!--    <color name="primary_dark">#0B4F6C</color>-->
+
+    <!--    <color name="primary">#1768AC</color>-->
+    <!--    <color name="primary_dark">#2541B2</color>-->
+
+    <!--    <color name="primary">#028090</color>-->
+    <!--    <color name="primary_dark">#114B5F</color>-->
+
+    <!--    <color name="primary">#673ab7</color>-->
+    <!--    <color name="primary_dark">#320b86</color>-->
+
+    <!--    <color name="primary">#4527a0</color>-->
+    <!--    <color name="primary_dark">#000070</color>-->
+
+    <!--    <color name="primary">#d81b60</color>-->
+    <!--    <color name="primary_dark">#a00037</color>-->
+
+    <!--    <color name="primary">#90caf9</color>-->
+    <!--    <color name="primary_dark">#5d99c6</color>-->
+
+    <!--    <color name="primary">#29b6f6</color>-->
+    <!--    <color name="primary_dark">#0086c3</color>-->
+
+    <!-- GREEN -->
+    <!--    <color name="primary">#26a69a</color>-->
+    <!--    <color name="primary_dark">#00766c</color>-->
+
+    <color name="primary">#2196f3</color>
+    <color name="primary_dark">#0069c0</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="input_background">#ECECEC</color>
+    <color name="icon_background">#20FFFFFF</color>
+    <color name="error">#B00020</color>
+    <color name="received_message_background">#090D16</color>
+    <color name="green">#008000</color>
+    <color name="red">#FF0000</color>
+</resources>
