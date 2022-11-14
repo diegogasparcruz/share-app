@@ -346,11 +346,9 @@ public class AddNewAnnouncementActivity extends BaseActivity {
     }
 
     private String encodeImage(Bitmap bitmap) {
-        int previewWidth = 150;
-        int previewHeight = bitmap.getHeight() * previewWidth / bitmap.getWidth();
-        Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap, previewWidth, previewHeight, false);
+        Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap, 256, 256, true);
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        previewBitmap.compress(Bitmap.CompressFormat.JPEG, 50, byteArrayOutputStream);
+        previewBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
         byte[] bytes = byteArrayOutputStream.toByteArray();
 
         return Base64.encodeToString(bytes, Base64.DEFAULT);
