@@ -239,7 +239,7 @@
             android:layout_marginLeft="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_300sdp"
             android:layout_marginRight="@dimen/_16sdp"
-            android:text="Lorem Ipsum is simply dummy. Lorem Ipsum is simply dummy" />
+            android:text="Lorem Ipsum is simply dummy. Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy fdfdw" />
     </FrameLayout>
 
     <androidx.fragment.app.FragmentContainerView
