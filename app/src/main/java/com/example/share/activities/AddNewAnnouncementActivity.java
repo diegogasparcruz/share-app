@@ -48,6 +48,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.HashMap;
 
 public class AddNewAnnouncementActivity extends BaseActivity {
     private ActivityAddNewAnnouncementBinding binding;
@@ -197,9 +198,23 @@ public class AddNewAnnouncementActivity extends BaseActivity {
             finish();
         });
         binding.layoutImage.setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            pickImage.launch(intent);
+            new AlertDialog.Builder(AddNewAnnouncementActivity.this)
+                    .setTitle("Origem da imagem")
+                    .setMessage("Por favor, selecione a origem da imagem: ")
+                    .setPositiveButton("Câmera", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                            pickCameraImage.launch(intent);
+                        }
+                    })
+                    .setNegativeButton("Galeria", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                            pickImage.launch(intent);
+                        }
+                    })
+                    .show();
         });
         binding.buttonContinueRegister.setOnClickListener(v -> {
             if (isValidForm()) {
@@ -325,7 +340,7 @@ public class AddNewAnnouncementActivity extends BaseActivity {
         announcement.setPrice(Double.valueOf(price));
         announcement.setStatus(1);
 
-        if(latitude == null && longitude == null) {
+        if (latitude == null && longitude == null) {
             // Centro da cidade Quixadá
             announcement.setLatPoint(-4.96998);
             announcement.setLngPoint(-39.01586);
@@ -368,6 +383,25 @@ public class AddNewAnnouncementActivity extends BaseActivity {
                             binding.iconAddImage.setVisibility(View.GONE);
                             encodedImage = encodeImage(bitmap);
                         } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+    );
+
+    private final ActivityResultLauncher<Intent> pickCameraImage = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == RESULT_OK) {
+                    if (result.getData() != null) {
+                        Bitmap bitmap = (Bitmap) result.getData().getExtras().get("data");
+                        try {
+                            binding.imageAnnouncement.setImageBitmap(bitmap);
+                            binding.textAddImage.setVisibility(View.GONE);
+                            binding.iconAddImage.setVisibility(View.GONE);
+                            encodedImage = encodeImage(bitmap);
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
