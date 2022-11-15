@@ -52,4 +52,6 @@
     <string name="informe_seu_e_mail_para_receber_as_instru_es_necess_rias_e_criar_uma_nova_senha">Informe seu e-mail para receber as instruções necessárias e criar uma nova senha.</string>
     <string name="enviar_e_mail">Enviar e-mail</string>
     <string name="ok">Ok</string>
+    <string name="desativar">Desativar</string>
+    <string name="reativar">Reativar</string>
 </resources>

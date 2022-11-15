@@ -184,10 +184,10 @@ public class AddNewAnnouncementActivity extends BaseActivity {
                 }
             }
 
-            binding.imageDelete.setOnClickListener(v -> {
+            binding.buttonDisable.setOnClickListener(v -> {
                 disableAnnouncement();
             });
-            binding.imageReactivate.setOnClickListener(v -> {
+            binding.buttonReactivate.setOnClickListener(v -> {
                 reactivateAnnouncement();
             });
         }
@@ -303,15 +303,15 @@ public class AddNewAnnouncementActivity extends BaseActivity {
     private void verifyStatus() {
         if (editAnnouncement != null) {
             if (editAnnouncement.getStatus() == 1) {
-                binding.imageDelete.setVisibility(View.VISIBLE);
-                binding.imageReactivate.setVisibility(View.GONE);
+                binding.buttonDisable.setVisibility(View.VISIBLE);
+                binding.buttonReactivate.setVisibility(View.GONE);
             } else if (editAnnouncement.getStatus() == 0) {
-                binding.imageDelete.setVisibility(View.GONE);
-                binding.imageReactivate.setVisibility(View.VISIBLE);
+                binding.buttonDisable.setVisibility(View.GONE);
+                binding.buttonReactivate.setVisibility(View.VISIBLE);
             }
         } else {
-            binding.imageDelete.setVisibility(View.GONE);
-            binding.imageReactivate.setVisibility(View.GONE);
+            binding.buttonDisable.setVisibility(View.GONE);
+            binding.buttonReactivate.setVisibility(View.GONE);
         }
     }
 
