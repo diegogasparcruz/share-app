@@ -76,7 +76,7 @@ public class AnnouncementDetailsActivity extends BaseActivity implements OnMapRe
 
         binding.imageAnnouncement.setImageBitmap(getImage(announcement.getImage()));
         binding.txtTitle.setText(announcement.getTitle());
-        binding.txtMoney.setText(announcement.getPrice() + "");
+        binding.txtMoney.setText("R$ " + announcement.getPrice() + "");
         binding.txtNumberBedrooms.setText(announcement.getNumberBedrooms() + "");
         binding.txtNumberBathrooms.setText(announcement.getNumberBathrooms() + "");
         binding.txtNumberResidents.setText(announcement.getNumberResidents() + "");
